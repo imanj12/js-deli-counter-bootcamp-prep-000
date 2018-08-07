@@ -1,8 +1,14 @@
 var katzDeli = []
 
 function takeANumber(katzDeliLine, name) {
+<<<<<<< HEAD
   katzDeliLine.push(name)
   var linePlace = katzDeliLine.length
+=======
+  katzDeli = [...katzDeliLine, name]
+  
+  var linePlace = katzDeli.length
+>>>>>>> bc20848690aa589086d02c772d17b932a0d74947
   return `Welcome, ${name}. You are number ${linePlace} in line.`
 }
 
