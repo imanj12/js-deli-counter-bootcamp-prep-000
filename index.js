@@ -6,6 +6,13 @@ function takeANumber(katzDeliLine, name) {
   return `Welcome, ${name}. You are number ${linePlace} in line.`
 }
 
+var newPerson = 0
+function takeANumberII(katzDeliLine) {
+  newPerson += 1
+  katzDeliLine.push(newPerson)
+  return `You are number ${newPerson}.`
+}
+
 function nowServing(deliLine) {
   if (deliLine.length === 0) {
     return 'There is nobody waiting to be served!'
